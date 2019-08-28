@@ -1,0 +1,21 @@
+{
+  "name": "teste-typescript",
+  "version": "1.0.0",
+  "description": "testes em typescript",
+  "main": "server.js",
+  "dependencies": {
+    "@types/express": "^4.17.1",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1",
+    "typescript": "^3.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon --watch ts-node server/server.ts",
+    "start": "nodemon /build/server/server.ts",
+    "prod": "npm run build && npm run start"
+  },
+  "author": "Marcio Oliveira",
+  "license": "ISC"
+}
